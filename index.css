@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --color-heading: #13183f;
+  --color-light: #fff;
+  --color-button: #13183f;
+  --color-banner-button: #ffa7c3;
+  --color-button-highlight: #666ca3;
+  --color-paragraph: #83869a;
+  --color-primary: #f74780;
+  --color-primary-gradient: linear-gradient(
+    180deg,
+    #ff6f48 0.04%,
+    #f02aa6 100%
+  );
+  --color-secondary-gradient: linear-gradient(
+    180deg,
+    #4851ff 0%,
+    #f02aa6 99.92%
+  );
+
+  --heading-xl: 3.5rem;
+  --heading-l: 2.5rem;
+  --heading-m: 2rem;
+  --heading-s: 1.5rem;
+}
+
+.heading-xl {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 70px;
+  color: var(--color-heading);
+}
+
+.heading-l {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 51px;
+  color: var(--color-heading);
+}
+
+.heading-m {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 40px;
+  color: var(--color-heading);
+}
+
+.heading-s {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: var(--color-heading);
+}
+
+.paragraph-m {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--color-paragraph);
+}
+
+.paragraph-b {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--color-paragraph);
+}
+
+.button-normal {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--color-button);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--color-light);
+  padding: 0.88rem 2rem;
+  border-radius: 1.75rem;
+  border: unset;
+  outline: unset;
+  transition: 0.4s ease;
+}
+
+.button-normal:hover {
+  background: var(--color-button-highlight);
+}
