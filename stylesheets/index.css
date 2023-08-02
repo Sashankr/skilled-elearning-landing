@@ -77,6 +77,10 @@ body {
   color: var(--color-paragraph);
 }
 
+.container {
+  padding: 0 10.3rem;
+}
+
 .button-normal {
   font-family: "Plus Jakarta Sans", sans-serif;
   background: var(--color-button);
@@ -89,6 +93,7 @@ body {
   border-radius: 1.75rem;
   border: unset;
   outline: unset;
+  cursor: pointer;
   transition: 0.4s ease;
 }
 
