@@ -1,0 +1,25 @@
+.banner-content {
+  position: relative;
+}
+
+.banner__heading {
+  margin: 11.6rem 0 1.81rem;
+  max-width: 29.5rem;
+}
+
+.banner__description {
+  max-width: 27.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.banner__content-image {
+  position: absolute;
+  right: -20.9rem;
+  top: -5.4rem;
+}
+
+@media (max-width: 1080px) {
+  .banner__content-image {
+    top: -3.11rem;
+  }
+}

@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="./stylesheets/index.css" />
     <link rel="stylesheet" href="./stylesheets/navbar.css" />
+    <link rel="stylesheet" href="./stylesheets/banner.css" />
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
@@ -20,9 +21,43 @@
       <div class="container">
         <section class="navbar__container">
           <img src="./assets/logo-dark.svg" alt="skilled co dark logo" />
-          <button class="button-normal">Get Started</button>
+          <button class="button-base button-normal">Get Started</button>
         </section>
       </div>
     </nav>
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="banner_container">
+            <section class="banner__content">
+              <h1 class="heading-xl banner__heading">
+                Maximize skill, minimize budget
+              </h1>
+              <p class="paragraph-m banner__description">
+                Our modern courses across a range of in-demand skills will give
+                you the knowledge you need to live the life you want.
+              </p>
+              <button class="button-base button-primary">Get Started</button>
+            </section>
+            <picture class="banner__content-image">
+              <source
+                media="(max-width: 625px)"
+                srcset="./assets/image-hero-mobile.png"
+              />
+
+              <source
+                media="(max-width: 1080px)"
+                srcset="./assets/image-hero-tablet.png"
+              />
+
+              <img
+                src="./assets/image-hero-desktop.png"
+                alt="number of courses hours and memebers"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

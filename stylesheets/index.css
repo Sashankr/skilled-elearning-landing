@@ -8,6 +8,7 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -23,6 +24,7 @@ body {
     #ff6f48 0.04%,
     #f02aa6 100%
   );
+
   --color-secondary-gradient: linear-gradient(
     180deg,
     #4851ff 0%,
@@ -81,14 +83,12 @@ body {
   padding: 0 10.3rem;
 }
 
-.button-normal {
+.button-base {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background: var(--color-button);
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.75rem;
   text-align: center;
-  color: var(--color-light);
   padding: 0.88rem 2rem;
   border-radius: 1.75rem;
   border: unset;
@@ -97,6 +97,26 @@ body {
   transition: 0.4s ease;
 }
 
+.button-normal {
+  background: var(--color-button);
+  color: var(--color-light);
+}
+
 .button-normal:hover {
   background: var(--color-button-highlight);
+}
+
+.button-primary {
+  background: var(--color-primary-gradient);
+}
+
+.button-primary:hover {
+  opacity: 0.5;
+  color: var(--color-light);
+}
+
+@media (max-width: 1080px) {
+  .container {
+    padding: 0 2.44rem;
+  }
 }
